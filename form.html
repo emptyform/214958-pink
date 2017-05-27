@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс на самое безбашенное путешествие с Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__nav">
+        <a class="logo">
+          <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="page-header__button" type="button"></button>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+      <section class="promo">
+        <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <p class="description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span>Пожалуйста, заполните форму ниже:</span>
+        </p>
+
+        <fieldset class="form__fieldset">
+          <div class="form__row">
+            <label class="data-input">
+              <span class="data-input__text">Фамилия:</span>
+              <input class="field" type="text" name="name" placeholder="Укажите фамилию *" required>
+            </label>
+            <label class="data-input">
+              <span class="data-input__text">Имя:</span>
+              <input class="field" type="text" name="name" placeholder="Введите ваше имя *" required>
+            </label>
+            <label class="data-input">
+              <span class="data-input__text">Отчество:</span>
+              <input class="field" type="text" name="name" placeholder="Ну и отчество тоже">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__row">
+            <label class="checkbox">
+              <input class="checkbox__input" name="achievement" value="Сделал селфи с акулой" type="checkbox" checked>
+              <span class="checkbox__text">Сделал селфи с акулой</span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" name="achievement" value="Обгорел на пляже" type="checkbox" checked>
+              <span class="checkbox__text">Обгорел на пляже</span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" name="achievement" value="Видел Чака Норриса" type="checkbox">
+              <span class="checkbox__text">Видел Чака Норриса</span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" name="achievement" value="Накупил сувениров" type="checkbox">
+              <span class="checkbox__text">Накупил сувениров</span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" name="achievement" value="Удержал башню" type="checkbox" checked>
+              <span class="checkbox__text">Удержал башню</span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" name="achievement" value="Разгромил отель" type="checkbox">
+              <span class="checkbox__text">Разгромил отель</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <div class="form__row">
+            <label class="data-input">
+              <span class="data-input__text">Номер телефона</span>
+              <input class="field" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="data-input">
+              <span class="data-input__text">Адрес почты</span>
+              <input class="field" type="email" name="email" placeholder="Введите почту *" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__title">С каким приложением путешествовали?</legend>
+          <div class="form__row">
+            <label class="radio">
+              <input class="radio__choose" type="radio" value="Pink для iOS" name="app" checked>
+              <span class="radio__text">Pink для iOS</span>
+            </label>
+            <label class="radio">
+              <input class="radio__choose" type="radio" value="Pink на Android" name="app">
+              <span class="radio__text">Pink на Android</span>
+            </label>
+            <label class="radio">
+              <input class="radio__choose" type="radio" value="Windows Phone" name="app">
+              <span class="radio__text">Windows Phone</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Опишите свои эмоции</legend>
+          <div class="form__row">
+            <textarea class="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form__footer">
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__required"><span>*</span> — обязательные поля</p>
+        </div>
+
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img src="http://placehold.it/147x40" width="147" height="40" alt="PINK">
+      </a>
+      <section class="social">
+        <a class="social__link" href="#">
+          <img class="social__image" src="http://placehold.it/18x14" width="18" height="14" alt="Twitter">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__image" src="http://placehold.it/9x18" width="9" height="18" alt="Facebook">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__image" src="http://placehold.it/15x13" width="15" height="13" alt="Youtube">
+        </a>
+      </section>
+      <a class="developer">
+        <span class="developer__title">Разработано</span>
+        <img class="developer__logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+      </a>
+    </footer>
+
+  </body>
+</html>
