@@ -1,0 +1,64 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 38px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: auto;
+    left: -7%;
+    right: -7%;
+    height: 1px;
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+}
+
+.buttons__btn {
+  font-family: @font;
+  border: 3px solid;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.buttons__btn--post {
+    color: @pink;
+    border-color: @pink;
+    margin-bottom: 12px;
+  }
+
+  &.buttons__btn--reset {
+    color: rgba(40, 54, 69, 0.1);
+    border-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &:hover.buttons__btn--post,
+  &:focus.buttons__btn--post {
+    background-color: @pink;
+    color: #ffffff;
+  }
+
+  &:active.buttons__btn--post {
+    background-color: @pink;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover.buttons__btn--reset,
+  &:focus.buttons__btn--reset {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active.buttons__btn--reset {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    border-color: transparent;
+  }
+}

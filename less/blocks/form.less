@@ -1,0 +1,54 @@
+.form__description {
+  .text-blue();
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 45px 0 0;
+}
+
+.form__description span {
+  display: none;
+  visibility: hidden;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &.form__fieldset--background {
+    background-color: @bg-color;
+  }
+}
+
+.form__title {
+  .text-pink();
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0 5px;
+}
+
+.form__fieldset-wrapper {
+  padding-top: 26px;
+  padding-bottom: 34px;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__required {
+  .text-blue();
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.form__required span {
+  color: @pink;
+}

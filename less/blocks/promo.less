@@ -1,0 +1,26 @@
+.promo__header {
+  min-height: 237px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.promo__header--main {
+    min-height: 462px;
+    background-image:
+      url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-size: auto, cover;
+    background-position: bottom left, center;
+  }
+}
+
+.promo__title {
+  .main-title(#ffffff);
+  font-size: 24px;
+  text-align: center;
+  margin-top: 55px;
+}
