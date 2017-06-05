@@ -1,0 +1,45 @@
+.apps {
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: @grey;
+}
+
+.apps__link {
+  display: block;
+  padding: 15px 0;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  transition: all 0.1s;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: @pink;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.apps__brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 36px 20px 15px;
+}
+
+.apps__desc {
+  color: #ffffff;
+  font-weight: 300;
+  margin: 17px 0 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}

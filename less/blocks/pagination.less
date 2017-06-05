@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__item {
+  margin: 0 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  background-color: rgba(40, 54, 69, 0.6);
+  cursor: pointer;
+
+  &.pagination__item--active,
+  &.pagination__item--active:hover,
+  &.pagination__item--active:focus,
+  &.pagination__item--active:active {
+    border: 3px solid @dark-blue;
+    background-color: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+}
