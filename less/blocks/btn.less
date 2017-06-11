@@ -21,3 +21,10 @@
 .btn:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+@media (min-width: @tablet-width) {
+
+  .btn {
+    width: calc(@column-width-tablet*2 + @container-padding-tablet);
+  }
+}

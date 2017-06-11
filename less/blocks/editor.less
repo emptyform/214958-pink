@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 38px 20px 28px;
+  margin: 41px 20px 28px;
   padding-bottom: 44px;
 }
 
@@ -32,11 +32,11 @@
 
   &::before {
     content: "";
-    position: absolute;
+    display: block;
     width: 10px;
     height: 10px;
-    top: -6px;
-    right: 35px;
+    margin-top: -6px;
+    margin-left: 80%;
     border: 2px solid @pink;
     background-color: #ffffff;
     border-radius: 50%;
@@ -47,8 +47,82 @@
     background-color: @pink;
   }
 
-  &.editor__range--hidden {
+  &.editor__range--mobile-hidden {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .editor {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 0 25px 0;
+    padding-bottom: 0;
+  }
+
+  .editor__tool {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px 12px 0;
+    border-bottom: 1px solid @light-grey;
+  }
+
+  .editor__range {
+    position: static;
+
+    &.editor__range--mobile-hidden {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  .editor__btn {
+    width: 30px;
+    flex-shrink: 0;
+    margin-right: 25px;
+
+    &.editor__btn--crop img {
+      width: 22px;
+      height: 22px;
+    }
+
+    &.editor__btn--fill img {
+      width: 24px;
+      height: 22px;
+    }
+
+    &.editor__btn--contrast img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .editor__tool {
+    padding: 10px 30px 12px 0;
+  }
+
+  .editor__btn {
+    width: 48px;
+    margin-right: 44px;
+
+    &.editor__btn--crop img {
+      width: 44px;
+      height: 44px;
+    }
+
+    &.editor__btn--fill img {
+      width: 48px;
+      height: 43px;
+    }
+
+    &.editor__btn--contrast img {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

@@ -1,7 +1,8 @@
 .apps {
-  padding-top: 28px;
-  padding-bottom: 30px;
+  padding: 28px @container-padding-mobile 30px;
   background-color: @grey;
+  width: 100%;
+  margin: 0 @mobile-no-container;
 }
 
 .apps__link {
@@ -42,4 +43,37 @@
   text-align: center;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .apps {
+    padding: 0 0 110px;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  .apps__brands {
+    margin: 50px 30px 31px;
+  }
+
+  .apps__desc {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .apps {
+    padding-bottom: 121px;
+    max-width: 300px;
+  }
+
+  .apps__brands {
+    margin: 70px 30px 51px;
+  }
+
+  .apps__link {
+    font-size: 21px;
+  }
 }

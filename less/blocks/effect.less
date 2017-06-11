@@ -1,0 +1,78 @@
+.effect {
+  position: relative;
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+
+  .effect {
+    display: block;
+    visibility: visible;
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      left: @container-padding-tablet;
+    }
+  }
+
+  .effect__wrapper {
+    padding-left: calc(@column-width-tablet*2 + @container-padding-tablet*1.5);
+  }
+
+  .effect__title {
+    .secondary-title();
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 0;
+    max-width: 250px;
+  }
+
+  .effect__desc {
+    .text-blue();
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+  }
+
+  .effect__link {
+    .text-pink();
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .effect {
+    background-color: @bg-color;
+    padding-bottom: 113px;
+  }
+
+  .effect__wrapper {
+    padding-left: 496px;
+  }
+
+  .effect__title {
+    max-width: 100%;
+  }
+
+  .effect__desc {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -10,3 +10,30 @@
     display: none;
   }
 }
+
+@media (min-width: @tablet-width) {
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 40px;
+
+    &.page-footer--main-page-hidden {
+      visibility: visible;
+      display: flex;
+    }
+  }
+
+  .page-footer__logo {
+    width: 33%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .page-footer {
+    padding-top: 64px;
+    padding-bottom: 75px;
+  }
+}

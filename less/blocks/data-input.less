@@ -12,3 +12,70 @@
   margin-left: 22px;
   margin-bottom: 5px;
 }
+
+.data-input__icon {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: @tablet-width) {
+
+  .data-input {
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0 0;
+
+    &.data-input--contacts {
+      position: relative;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin: 33px 0 0px;
+    }
+
+    &.data-input--contacts .data-input__text {
+      margin: 9px 0 0 19px;
+    }
+  }
+
+  .data-input__icon {
+    position: absolute;
+    display: block;
+    visibility: visible;
+    right: 2px;
+    top: 2px;
+    width: 61px;
+    height: 60px;
+    background-color: @light-grey;
+  }
+
+  .data-input__text {
+    margin: 0 18px 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .data-input {
+    margin: 30px 0 22px;
+
+    &.data-input--name:last-child {
+      margin-bottom: 0;
+    }
+
+    &.data-input--name:first-child {
+      margin-top: 0;
+    }
+
+    &.data-input--contacts {
+      width: 375px;
+    }
+
+    &.data-input--contacts .data-input__text {
+      margin: 9px 0 0 19px;
+    }
+  }
+
+  .data-input__text {
+    margin: 0 18px 0 0;
+  }
+}

@@ -1,6 +1,7 @@
-.photos {
+.photos__items {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .photos__desc {
@@ -9,4 +10,26 @@
   line-height: 30px;
   text-align: center;
   margin: 45px 0 49px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .photos__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  .photos__desc {
+    font-size: 18px;
+    margin: 90px 30px 57px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .photos__desc {
+    margin: 90px auto 89px;
+  }
 }

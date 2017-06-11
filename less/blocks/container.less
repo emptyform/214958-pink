@@ -2,3 +2,20 @@
   padding-right: @container-padding-mobile;
   padding-left: @container-padding-mobile;
 }
+
+@media (min-width: @tablet-width) {
+  .container {
+    padding-right: @container-padding-tablet;
+    padding-left: @container-padding-tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: @container-padding-desktop;
+    padding-left: @container-padding-desktop;
+  }
+}

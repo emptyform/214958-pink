@@ -9,13 +9,13 @@
   <body class="page-body">
 
     <header class="page-header  page-header--nojs">
-      <div class="page-header__nav  container">
-        <a class="logo">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-        </a>
-        <button class="page-header__button" type="button"></button>
-      </div>
-      <nav class="page-header__menu">
+      <nav class="container  page-header__menu">
+        <div class="page-header__item  page-header__item--logo">
+          <a class="logo">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+          </a>
+          <button class="page-header__button" type="button"></button>
+        </div>
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link">Главная</a>
@@ -35,9 +35,11 @@
 
     <main class="page-main">
 
-      <section class="promo">
-        <div class="promo__header  promo__header--main  container"></div>
-        <div class="apps  container">
+      <section class="promo  promo--main">
+        <div class="promo__header  promo__header--main">
+          <h1 class="promo__title">Взгляните на&nbsp;жизнь<br>иначе!</h1>
+        </div>
+        <div class="apps">
           <a class="apps__link" href="https://www.apple.com/itunes/">Скачать приложение</a>
           <div class="apps__brands">
             <a class="apps__download" href="https://www.apple.com/itunes/">
@@ -56,95 +58,110 @@
 
       <section class="features">
 
-        <header class="features__header  container">
+        <header class="container  features__header">
           <h2 class="title">Устали от серости мегаполиса?</h2>
-          <h2 class="title">Нам есть, что вам предложить!</h2>
+          <h2 class="title">Нам есть, что вам<br>предложить!</h2>
         </header>
 
-        <div class="features__items  container">
-          <div class="feature">
-            <h3 class="feature__title">Поднимает настроение</h3>
-            <p class="feature__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            <div class="feature__image  feature__image--initial"></div>
-          </div>
-          <div class="feature">
-            <h3 class="feature__title">Меняет мир вокруг</h3>
-            <p class="feature__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            <div class="feature__image  feature__image--intermediary"></div>
-          </div>
-          <div class="feature">
-            <h3 class="feature__title">Заводит новых друзей</h3>
-            <p class="feature__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-            <div class="feature__image  feature__image--result"></div>
+        <div class="features__items">
+          <div class="container  features__wrapper">
+            <div class="feature">
+              <div class="feature__image  feature__image--initial"></div>
+              <h3 class="feature__title">Поднимает настроение</h3>
+              <p class="feature__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="feature">
+              <div class="feature__image  feature__image--intermediary"></div>
+              <h3 class="feature__title">Меняет мир вокруг</h3>
+              <p class="feature__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="feature">
+              <div class="feature__image  feature__image--result"></div>
+              <h3 class="feature__title">Заводит новых друзей</h3>
+              <p class="feature__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
         </div>
 
       </section>
 
+      <section class="effect">
+        <div class="container  effect__wrapper">
+          <h3 class="effect__title">Эффект на&nbsp;24&nbsp;часа!</h3>
+          <p class="effect__desc">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+
       <section class="feedback  container">
+
         <div class="feedback__list">
           <blockquote class="review">
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <cite class="review__author">Николай Петров</cite>
+            <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <cite class="review__author">Николай Петров<span>25 лет, водитель трамвая</span></cite>
           </blockquote>
           <blockquote class="review">
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <cite class="review__author">Василий Сидоров</cite>
+            <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <cite class="review__author">Василий Сидоров<span>25 лет, водитель трамвая</span></cite>
           </blockquote>
           <blockquote class="review">
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <cite class="review__author">Алексей Иванов</cite>
+            <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <cite class="review__author">Алексей Иванов<span>25 лет, водитель трамвая</span></cite>
           </blockquote>
         </div>
-        <div class="pagination">
+        <div class="pagination  feedback__pagination">
           <span class="pagination__item  pagination__item--active"></span>
           <span class="pagination__item"></span>
           <span class="pagination__item"></span>
         </div>
+
       </section>
 
-      <section class="plan  container">
+      <section class="plan">
 
+        <div class="container">
           <table class="prices">
             <tr>
               <th class="prices__header"></th>
               <th class="prices__header">
-                <span class="prices__title">Стандарт</span>
-                <span class="prices__text">3,99 USD</span>
+                <span class="prices__title">База</span>
+                <span class="prices__text">1,99 USD</span>
               </th>
-              <th class="prices__header  prices__header--flag-hit">
+              <th class="prices__header">
+                <div class="prices__flag  prices__flag--hit"></div>
                 <span class="prices__title">Стандарт</span>
                 <span class="prices__text">3,99 USD</span>
               </th>
               <th class="prices__header">
-                <span class="prices__title">Стандарт</span>
-                <span class="prices__text">3,99 USD</span>
+                <span class="prices__title">Анлим</span>
+                <span class="prices__text">9,99 USD</span>
               </th>
             </tr>
             <tr>
-              <td class="prices__item  prices__item--hidden  prices__item--yes">Розовый фильтр</td>
+              <td class="prices__item  prices__item--mobile-hidden">Розовый фильтр</td>
               <td class="prices__item  prices__item--yes">Розовый фильтр</td>
               <td class="prices__item  prices__item--yes">Розовый фильтр</td>
               <td class="prices__item  prices__item--yes">Розовый фильтр</td>
             </tr>
             <tr>
-              <td class="prices__item  prices__item--hidden  prices__item--yes">Смайлики</td>
-              <td class="prices__item  prices__item--yes">Смайлики</td>
+              <td class="prices__item  prices__item--mobile-hidden">Смайлики</td>
+              <td class="prices__item  prices__item--no">Смайлики</td>
               <td class="prices__item  prices__item--yes">Смайлики</td>
               <td class="prices__item  prices__item--yes">Смайлики</td>
             </tr>
             <tr>
-              <td class="prices__item  prices__item--hidden  prices__item--no">Комментарии</td>
+              <td class="prices__item  prices__item--mobile-hidden">Комментарии</td>
               <td class="prices__item  prices__item--no">Комментарии</td>
               <td class="prices__item  prices__item--no">Комментарии</td>
-              <td class="prices__item  prices__item--no">Комментарии</td>
+              <td class="prices__item  prices__item--yes">Комментарии</td>
             </tr>
           </table>
 
-        <div class="pagination">
-          <span class="pagination__item"></span>
-          <span class="pagination__item  pagination__item--active"></span>
-          <span class="pagination__item"></span>
+          <div class="pagination  plan__pagination">
+            <span class="pagination__item"></span>
+            <span class="pagination__item  pagination__item--active"></span>
+            <span class="pagination__item"></span>
+          </div>
         </div>
 
       </section>
@@ -156,15 +173,18 @@
         </header>
 
         <div class="contacts__inner">
-          <p class="contacts__text">Звоните:
+          <div class="contacts__item  contacts__item--phone">
+            <p class="contacts__text">Звоните:</p>
             <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </p>
-          <p class="contacts__text">Пишите:
+          </div>
+          <div class="contacts__item  contacts__item--email">
+            <p class="contacts__text">Пишите:</p>
             <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p class="contacts__text">Приезжайте в гости:
-            <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
-          </p>
+          </div>
+          <div class="contacts__item  contacts__item--address">
+            <p class="contacts__text">Приезжайте в гости:</p>
+            <span class="contacts__value">ул. Большая<br>Конюшенная, 19/8</span>
+          </div>
         </div>
 
       </section>
@@ -175,8 +195,8 @@
 
     </main>
 
-    <footer class="page-footer  page-footer--main-page-hidden">
-      <a class="page-footer__logo" href="index.html">
+    <footer class="page-footer  page-footer--main-page-hidden  container">
+      <a class="page-footer__logo">
         <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
       </a>
       <section class="social">

@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  justify-content: center;
   margin: 37px 0;
 }
 
@@ -7,6 +8,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 1;
   margin: 0 6px;
   padding: 10px;
   width: 51px;
@@ -14,4 +16,12 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
   font-size: 0;
+}
+
+@media (min-width: @tablet-width) {
+
+  .social {
+    width: 33%;
+    margin: 0;
+  }
 }
