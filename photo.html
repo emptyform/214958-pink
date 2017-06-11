@@ -9,13 +9,13 @@
   <body class="page-body">
 
     <header class="page-header  page-header--nojs">
-      <div class="page-header__nav  container">
-        <a class="logo" href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-        </a>
-        <button class="page-header__button" type="button"></button>
-      </div>
-      <nav class="page-header__menu">
+      <nav class="container  page-header__menu">
+        <div class="page-header__item  page-header__item--logo">
+          <a href="index.html" class="logo">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+          </a>
+          <button class="page-header__button" type="button"></button>
+        </div>
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link" href="index.html">Главная</a>
@@ -36,8 +36,8 @@
     <main class="page-main">
 
       <section class="promo">
-        <div class="promo__header  container">
-          <h1 class="promo__title">Фотографии пользователей</h1>
+        <div class="promo__header">
+          <h1 class="promo__title">Фотографии<br>пользователей</h1>
         </div>
       </section>
 
@@ -155,29 +155,31 @@
 
         <form class="upload__form  container" action="https://echo.htmlacademy.ru/" method="post">
           <img class="upload__image" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="фото">
-          <div class="editor">
-            <div class="editor__tool">
-              <button class="editor__btn  editor__btn--crop  editor__btn--active" type="button">
-                <img src="img/icon-editor-crop.svg" width="44" height="44" alt="crop">
-              </button>
-              <span class="editor__range"></span>
+          <div class="upload__tools">
+            <div class="editor">
+              <div class="editor__tool">
+                <button class="editor__btn  editor__btn--crop  editor__btn--active" type="button">
+                  <img src="img/icon-editor-crop.svg" width="44" height="44" alt="crop">
+                </button>
+                <span class="editor__range"></span>
+              </div>
+              <div class="editor__tool">
+                <button class="editor__btn  editor__btn--fill" type="button">
+                  <img src="img/icon-editor-fill.svg" width="48" height="43" alt="fill">
+                </button>
+                <span class="editor__range  editor__range--mobile-hidden"></span>
+              </div>
+              <div class="editor__tool">
+                <button class="editor__btn  editor__btn--contrast" type="button">
+                  <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="contrast">
+                </button>
+                <span class="editor__range  editor__range--mobile-hidden"></span>
+              </div>
             </div>
-            <div class="editor__tool">
-              <button class="editor__btn  editor__btn--fill" type="button">
-                <img src="img/icon-editor-fill.svg" width="48" height="43" alt="fill">
-              </button>
-              <span class="editor__range  editor__range--hidden"></span>
+            <div class="buttons">
+              <button class="buttons__btn buttons__btn--post" type="button">Запостить</button>
+              <button class="buttons__btn buttons__btn--reset" type="button">Отмена</button>
             </div>
-            <div class="editor__tool">
-              <button class="editor__btn  editor__btn--contrast" type="button">
-                <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="contrast">
-              </button>
-              <span class="editor__range  editor__range--hidden"></span>
-            </div>
-          </div>
-          <div class="buttons">
-            <button class="buttons__btn buttons__btn--post" type="button">Запостить</button>
-            <button class="buttons__btn buttons__btn--reset" type="button">Отмена</button>
           </div>
         </form>
 

@@ -9,8 +9,8 @@
     position: absolute;
     top: 0;
     width: auto;
-    left: -7%;
-    right: -7%;
+    left: @mobile-no-container;
+    right: @mobile-no-container;
     height: 1px;
     background-color: rgba(40, 54, 69, 0.1);
   }
@@ -27,6 +27,8 @@
   line-height: 18px;
   cursor: pointer;
   transition: all 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &.buttons__btn--post {
     color: @pink;
@@ -60,5 +62,41 @@
     background-color: rgba(40, 54, 69, 0.3);
     color: rgba(255, 255, 255, 0.3);
     border-color: transparent;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+
+  .buttons {
+    padding: 38px 13px 0 0;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .buttons__btn {
+
+    &.buttons__btn--post {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .buttons {
+    padding-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .buttons__btn {
+    width: 183px;
+
+    &.buttons__btn--post {
+      margin-bottom: 0;
+    }
   }
 }
