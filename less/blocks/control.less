@@ -1,0 +1,42 @@
+.control {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: @desktop-width) {
+
+  .control {
+    display: block;
+    visibility: visible;
+  }
+
+  .control__arrow {
+    position: absolute;
+    top: 53%;
+    width: 31px;
+    height: 31px;
+    background-color: transparent;
+    border-left: 2px solid rgba(40, 54, 69, 0.3);
+    border-bottom: 2px solid rgba(40, 54, 69, 0.3);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(40, 54, 69, 0.6);
+    }
+
+    &:active {
+      border-color: rgba(40, 54, 69, 0.1);
+    }
+
+    &.control__arrow--left {
+      left: 16px;
+      transform: rotate(45deg);
+    }
+
+    &.control__arrow--right {
+      right: 16px;
+      transform: rotate(-135deg);
+    }
+  }
+}
