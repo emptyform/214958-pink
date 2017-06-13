@@ -14,6 +14,7 @@
     display: flex;
     visibility: visible;
     position: static;
+    width: auto;
   }
 
   &.page-header--visible,
@@ -23,8 +24,7 @@
 
   &.page-header--visible .page-header__item,
   &.page-header--nojs .page-header__item,
-  &.page-header--visible .page-header__menu,
-  &.page-header--nojs .page-header__menu {
+  &.page-header--visible .page-header__menu {
     background-color: @dark-blue;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
@@ -90,6 +90,7 @@
 
 .page-header__link {
   display: block;
+  position: relative;
   padding: 15px @container-padding-mobile;
   color: #ffffff;
   text-align: center;
@@ -126,6 +127,22 @@
 
 @media (min-width: @desktop-width) {
 
+  .page-header {
+
+    &.page-header--nojs,
+    &.page-header--visible {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &.page-header--visible .page-header__item,
+    &.page-header--nojs .page-header__item,
+    &.page-header--visible .page-header__menu {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
   .page-header__menu {
     flex-direction: row;
     justify-content: space-between;
@@ -134,7 +151,7 @@
   .page-header__list {
     position: static;
     flex-direction: row;
-    padding: 39px 0;
+    align-items: center;
     justify-content: center;
     display: flex;
     visibility: visible;
@@ -155,6 +172,23 @@
     text-transform: none;
     font-weight: 400;
     padding: 0;
+
+    &[href]:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:not([href]) {
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -7px;
+        height: 2px;
+        background-color: #ffffff;
+      }
+    }
   }
 
   .page-header__button {

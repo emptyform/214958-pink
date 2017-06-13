@@ -9,7 +9,9 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  transition: border-color 0.3s;
   box-sizing: content-box;
+  border: 3px solid currentColor;
   background-color: rgba(40, 54, 69, 0.6);
   cursor: pointer;
 
@@ -17,7 +19,7 @@
   &.pagination__item--active:hover,
   &.pagination__item--active:focus,
   &.pagination__item--active:active {
-    border: 3px solid @dark-blue;
+    border-color: @dark-blue;
     background-color: #ffffff;
   }
 
