@@ -11,12 +11,21 @@
   padding: 0;
   width: 48px;
   height: 48px;
+  fill: @dark-blue;
+  opacity: 0.3;
   border: none;
   background-color: transparent;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   &.editor__btn--active {
     cursor: default;
+    fill: @pink;
+    opacity: 1;
   }
 }
 
@@ -53,7 +62,7 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .editor {
     flex-direction: column;
@@ -82,25 +91,33 @@
     width: 30px;
     flex-shrink: 0;
     margin-right: 25px;
+    cursor: default;
+    fill: @pink;
+    opacity: 1;
 
-    &.editor__btn--crop img {
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &.editor__btn--crop svg {
       width: 22px;
       height: 22px;
     }
 
-    &.editor__btn--fill img {
+    &.editor__btn--fill svg {
       width: 24px;
       height: 22px;
     }
 
-    &.editor__btn--contrast img {
+    &.editor__btn--contrast svg {
       width: 16px;
       height: 16px;
     }
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .editor__tool {
     padding: 10px 30px 12px 0;
@@ -110,17 +127,17 @@
     width: 48px;
     margin-right: 44px;
 
-    &.editor__btn--crop img {
+    &.editor__btn--crop svg {
       width: 44px;
       height: 44px;
     }
 
-    &.editor__btn--fill img {
+    &.editor__btn--fill svg {
       width: 48px;
       height: 43px;
     }
 
-    &.editor__btn--contrast img {
+    &.editor__btn--contrast svg {
       width: 32px;
       height: 32px;
     }

@@ -2,6 +2,15 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+
+  &:hover .developer__logo,
+  &:focus .developer__logo {
+    fill: @dark-blue;
+  }
+
+  &:active .developer__logo {
+    opacity: 0.3;
+  }
 }
 
 .developer__title {
@@ -11,7 +20,11 @@
   margin-right: 14px;
 }
 
-@media (min-width: @tablet-width) {
+.developer__logo {
+  fill: @pink;
+}
+
+@media @tablet-width {
 
   .developer {
     width: 33%;
@@ -19,7 +32,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .developer__title {
     font-size: 18px;

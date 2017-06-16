@@ -1,31 +1,40 @@
 .effect {
   position: relative;
   display: none;
-  visibility: hidden;
   overflow: hidden;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .effect {
     display: block;
     visibility: visible;
-    padding-top: 65px;
-    padding-bottom: 65px;
 
     &::before {
-      content: "";
+      content: "24";
+      right: ~"calc(50% + 71px)";
+      font-size: 96px;
+      line-height: 300px;
+      top: 58px;
+      text-align: center;
+      color: @pink;
+      font-weight: 700;
       position: absolute;
       width: 238px;
       height: 276px;
-      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-image:
+        url("../img/icon-editor-diagram-fill.svg"),
+        url("../img/icon-timer.svg");
+      background-size: 202px, 238px 276px;
       background-repeat: no-repeat;
-      left: @container-padding-tablet;
+      background-position: center 56px, center;
     }
   }
 
   .effect__wrapper {
     padding-left: calc(@column-width-tablet*2 + @container-padding-tablet*1.5);
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 
   .effect__title {
@@ -50,15 +59,26 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .effect {
     background-color: @bg-color;
-    padding-bottom: 113px;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      top: 5px;
+      font-size: 120px;
+      line-height: 382px;
+      right: ~"calc(50% + 170px)";
+      background-size: 253px, 298px 345px;
+      background-position: center 70px, center;
+    }
   }
 
   .effect__wrapper {
     padding-left: 376px;
+    padding-bottom: 112px;
   }
 
   .effect__title {

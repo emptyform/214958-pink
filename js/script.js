@@ -94,20 +94,20 @@ formButton.addEventListener("click", function(event) {
 
 for (var i = 0; i < popupButton.length; i++) {
   popupButton[i].addEventListener("click", function(event) {
-    if (popupSuccess.classList.contains('popup--show')) {
-      popupSuccess.classList.remove('popup--show');
-    } else if (popupFailure.classList.contains('popup--show')) {
-      popupFailure.classList.remove('popup--show');
+    if (popupSuccess.classList.contains("popup--show")) {
+      popupSuccess.classList.remove("popup--show");
+    } else if (popupFailure.classList.contains("popup--show")) {
+      popupFailure.classList.remove("popup--show");
     }
   });
 }
 
-window.addEventListener('keydown', function(event) {
+window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
-    if (popupSuccess.classList.contains('popup--show')) {
-      popupSuccess.classList.remove('popup--show');
-    } else if (popupFailure.classList.contains('popup--show')) {
-      popupFailure.classList.remove('popup--show');
+    if (popupSuccess.classList.contains("popup--show")) {
+      popupSuccess.classList.remove("popup--show");
+    } else if (popupFailure.classList.contains("popup--show")) {
+      popupFailure.classList.remove("popup--show");
     }
   }
 });

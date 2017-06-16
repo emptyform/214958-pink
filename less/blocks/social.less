@@ -13,12 +13,26 @@
   padding: 10px;
   width: 51px;
   height: 51px;
-  border: 3px solid #e9ebec;
+  border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
   font-size: 0;
+
+  &:hover,
+  &:focus {
+    border-color: @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
-@media (min-width: @tablet-width) {
+.social__image {
+  fill: @pink;
+}
+
+@media @tablet-width {
 
   .social {
     width: 33%;

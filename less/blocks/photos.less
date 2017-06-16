@@ -1,3 +1,7 @@
+.photos {
+  overflow: hidden;
+}
+
 .photos__items {
   display: flex;
   flex-direction: column;
@@ -12,7 +16,7 @@
   margin: 45px 0 49px;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .photos__items {
     flex-direction: row;
@@ -23,13 +27,18 @@
 
   .photos__desc {
     font-size: 18px;
-    margin: 90px 30px 57px;
+    margin: 90px 30px 78px;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
+
+  .photos__items {
+    padding-top: 0;
+  }
 
   .photos__desc {
-    margin: 90px 120px 89px;
+    margin: 90px auto 89px;
+    padding: 0 130px;
   }
 }

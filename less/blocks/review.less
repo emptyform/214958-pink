@@ -1,5 +1,4 @@
 .review {
-  display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0;
@@ -7,7 +6,7 @@
   display: none;
 
   &.review--active {
-    display: block;
+    display: flex;
   }
 }
 
@@ -38,7 +37,7 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .review {
     flex-direction: column-reverse;
@@ -62,7 +61,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .review__text {
     margin-bottom: 37px;
