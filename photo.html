@@ -12,7 +12,13 @@
       <nav class="container  page-header__menu">
         <div class="page-header__item  page-header__item--logo">
           <a href="index.html" class="logo">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+            <picture>
+              <source media="(min-width: 960px)"
+                      srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)"
+                      srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" alt="PINK">
+            </picture>
           </a>
           <button class="page-header__button" type="button"></button>
         </div>
@@ -36,7 +42,7 @@
     <main class="page-main">
 
       <section class="promo">
-        <div class="promo__header">
+        <div class="promo__header  container">
           <h1 class="promo__title">Фотографии<br>пользователей</h1>
         </div>
       </section>
@@ -47,7 +53,21 @@
         <article class="photo  photo--day">
           <span class="photo__flag">Панорама дня</span>
           <a class="photo__link" href="#">
-            <img class="photo__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+            <picture>
+              <source
+                media="(min-width: 960px)"
+                srcset="img/panorama-desktop@2x.jpg 2x,
+                        img/panorama-desktop@1x.jpg 1x">
+              <source
+                media="(min-width: 660px)"
+                srcset="img/panorama-tablet@2x.jpg 2x,
+                        img/panorama-tablet@1x.jpg 1x">
+              <img class="photo__image"
+              src="img/panorama-mobile@1x.jpg"
+              srcset="img/panorama-mobile@2x.jpg 2x,
+                      img/panorama-mobile@1x.jpg 1x"
+              alt="Панорама дня">
+            </picture>
           </a>
           <div class="photo__desc">
             <div class="photo__title">
@@ -63,7 +83,21 @@
 
           <article class="photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="фото">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="img/photo-1-desktop@2x.jpg 2x,
+                          img/photo-1-desktop@1x.jpg 1x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-1-tablet@2x.jpg 2x,
+                          img/photo-1-tablet@1x.jpg 1x">
+                <img class="photo__image"
+                src="img/photo-1-mobile@1x.jpg"
+                srcset="img/photo-1-mobile@2x.jpg 2x,
+                        img/photo-1-mobile@1x.jpg 1x"
+                alt="фото">
+              </picture>
             </a>
             <div class="photo__desc">
               <div class="photo__title">
@@ -77,7 +111,21 @@
 
           <article class="photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="фото">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="img/photo-2-desktop@2x.jpg 2x,
+                          img/photo-2-desktop@1x.jpg 1x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-2-tablet@2x.jpg 2x,
+                          img/photo-2-tablet@1x.jpg 1x">
+                <img class="photo__image"
+                src="img/photo-2-mobile@1x.jpg"
+                srcset="img/photo-2-mobile@2x.jpg 2x,
+                        img/photo-2-mobile@1x.jpg 1x"
+                alt="фото">
+              </picture>
             </a>
             <div class="photo__desc">
               <div class="photo__title">
@@ -91,7 +139,21 @@
 
           <article class="photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="фото">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="img/photo-3-desktop@2x.jpg 2x,
+                          img/photo-3-desktop@1x.jpg 1x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-3-tablet@2x.jpg 2x,
+                          img/photo-3-tablet@1x.jpg 1x">
+                <img class="photo__image"
+                src="img/photo-3-mobile@1x.jpg"
+                srcset="img/photo-3-mobile@2x.jpg 2x,
+                        img/photo-3-mobile@1x.jpg 1x"
+                alt="фото">
+              </picture>
             </a>
             <div class="photo__desc">
               <div class="photo__title">
@@ -105,7 +167,21 @@
 
           <article class="photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="фото">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="img/photo-4-desktop@2x.jpg 2x,
+                          img/photo-4-desktop@1x.jpg 1x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-4-tablet@2x.jpg 2x,
+                          img/photo-4-tablet@1x.jpg 1x">
+                <img class="photo__image"
+                src="img/photo-4-mobile@1x.jpg"
+                srcset="img/photo-4-mobile@2x.jpg 2x,
+                        img/photo-4-mobile@1x.jpg 1x"
+                alt="фото">
+              </picture>
             </a>
             <div class="photo__desc">
               <div class="photo__title">
@@ -119,7 +195,21 @@
 
           <article class="photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="фото">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="img/photo-5-desktop@2x.jpg 2x,
+                          img/photo-5-desktop@1x.jpg 1x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-5-tablet@2x.jpg 2x,
+                          img/photo-5-tablet@1x.jpg 1x">
+                <img class="photo__image"
+                src="img/photo-5-mobile@1x.jpg"
+                srcset="img/photo-5-mobile@2x.jpg 2x,
+                        img/photo-5-mobile@1x.jpg 1x"
+                alt="фото">
+              </picture>
             </a>
             <div class="photo__desc">
               <div class="photo__title">
@@ -133,7 +223,21 @@
 
           <article class="photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="фото">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="img/photo-6-desktop@2x.jpg 2x,
+                          img/photo-6-desktop@1x.jpg 1x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-6-tablet@2x.jpg 2x,
+                          img/photo-6-tablet@1x.jpg 1x">
+                <img class="photo__image"
+                src="img/photo-6-mobile@1x.jpg"
+                srcset="img/photo-6-mobile@2x.jpg 2x,
+                        img/photo-6-mobile@1x.jpg 1x"
+                alt="фото">
+              </picture>
             </a>
             <div class="photo__desc">
               <div class="photo__title">
@@ -154,24 +258,44 @@
         <p class="upload__desc  container">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
         <form class="upload__form  container" action="https://echo.htmlacademy.ru/" method="post">
-          <img class="upload__image" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="фото">
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="img/photo-7-desktop@2x.jpg 2x,
+                      img/photo-7-desktop@1x.jpg 1x">
+            <source
+              media="(min-width: 660px)"
+              srcset="img/photo-7-tablet@2x.jpg 2x,
+                      img/photo-7-tablet@1x.jpg 1x">
+            <img class="upload__image"
+            src="img/photo-7-mobile@1x.jpg"
+            srcset="img/photo-7-mobile@2x.jpg 2x,
+                    img/photo-7-mobile@1x.jpg 1x"
+            alt="фото">
+          </picture>
           <div class="upload__tools">
             <div class="editor">
               <div class="editor__tool">
                 <button class="editor__btn  editor__btn--crop  editor__btn--active" type="button">
-                  <img src="img/icon-editor-crop.svg" width="44" height="44" alt="crop">
+                  <svg width="44" height="44">
+                    <use xlink:href="img/symbols.svg#icon-editor-crop"></use>
+                  </svg>
                 </button>
                 <span class="editor__range"></span>
               </div>
               <div class="editor__tool">
                 <button class="editor__btn  editor__btn--fill" type="button">
-                  <img src="img/icon-editor-fill.svg" width="48" height="43" alt="fill">
+                  <svg width="48" height="43">
+                    <use xlink:href="img/symbols.svg#icon-editor-fill"></use>
+                  </svg>
                 </button>
                 <span class="editor__range  editor__range--mobile-hidden"></span>
               </div>
               <div class="editor__tool">
                 <button class="editor__btn  editor__btn--contrast" type="button">
-                  <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="contrast">
+                  <svg width="32" height="32">
+                    <use xlink:href="img/symbols.svg#icon-editor-contrast"></use>
+                  </svg>
                 </button>
                 <span class="editor__range  editor__range--mobile-hidden"></span>
               </div>
@@ -189,25 +313,40 @@
 
     <footer class="page-footer  container">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+        <picture>
+          <source media="(min-width: 960px)"
+                  srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" alt="PINK">
+        </picture>
       </a>
       <section class="social">
         <a class="social__link" href="#">
-          <img class="social__image" src="img/icon-twitter.svg" width="18" height="14" alt="Twitter">
+          <svg class="social__image" width="18" height="14">
+            <use xlink:href="img/symbols.svg#icon-twitter"></use>
+          </svg>
         </a>
         <a class="social__link" href="#">
-          <img class="social__image" src="img/icon-facebook.svg" width="9" height="18" alt="Facebook">
+          <svg class="social__image" width="9" height="18">
+            <use xlink:href="img/symbols.svg#icon-facebook"></use>
+          </svg>
         </a>
         <a class="social__link" href="#">
-          <img class="social__image" src="img/icon-youtube.svg" width="15" height="13" alt="Youtube">
+          <svg class="social__image" width="15" height="13">
+            <use xlink:href="img/symbols.svg#icon-youtube"></use>
+          </svg>
         </a>
       </section>
       <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="developer__title">Разработано</span>
-        <img class="developer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        <svg class="developer__logo" width="27" height="34">
+          <use xlink:href="img/symbols.svg#logo-htmlacademy"></use>
+        </svg>
       </a>
     </footer>
 
+    <script src="node_modules/picturefill/dist/picturefill.min.js"></script>
+    <script src="node_modules/svg4everybody/dist/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <script src="js/script.js"></script>
   </body>
 </html>

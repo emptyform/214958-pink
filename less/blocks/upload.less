@@ -30,7 +30,7 @@
   margin: 43px 0;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .upload__form {
     flex-direction: row;
@@ -46,7 +46,7 @@
   }
 
   .upload__tools {
-    width: calc(@column-width-tablet*2 + @container-padding-tablet);
+    width: ~"calc(@column-width-tablet*2 + @container-padding-tablet)";
     flex-grow: 1;
     margin-left: 45px;
   }
@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .upload {
     margin: 0 auto 38px;

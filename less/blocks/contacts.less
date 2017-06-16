@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 7px;
-  padding-bottom: 5px;
+  padding-bottom: 12px;
 }
 
 .contacts__header {
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 27px 0;
+  margin: 25px 0;
 }
 
 .contacts__text {
@@ -43,7 +43,11 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
+
+  .contacts {
+    padding-bottom: 8px;
+  }
 
   .contacts__inner {
     display: flex;
@@ -62,9 +66,13 @@
   .contacts__header {
     margin-bottom: 23px;
   }
+
+  .contacts__value {
+    margin-top: 6px;
+  }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .contacts {
     padding-top: 32px;

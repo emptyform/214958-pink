@@ -13,6 +13,12 @@
   &:active .radio__text::before {
     border-color: @pink;
   }
+
+  &:hover .radio__choose:disabled + .radio__text::before,
+  &:focus .radio__choose:disabled + .radio__text::before,
+  &:active .radio__choose:disabled + .radio__text::before {
+    border-color: @light-grey;
+  }
 }
 
 .radio__choose {
@@ -22,6 +28,11 @@
     background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &:disabled + .radio__text {
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }
 
@@ -42,7 +53,7 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .radio {
     margin: 16px 0 22px;
@@ -56,7 +67,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .radio {
     margin: 12px 0 20px;

@@ -13,6 +13,12 @@
   &:active .checkbox__text::before {
     border-color: @pink;
   }
+
+  &:hover .checkbox__input:disabled + .checkbox__text::before,
+  &:focus .checkbox__input:disabled + .checkbox__text::before,
+  &:active .checkbox__input:disabled + .checkbox__text::before {
+    border-color: @light-grey;
+  }
 }
 
 .checkbox__input {
@@ -22,6 +28,11 @@
     background-image: url("../img/icon-check.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &:disabled + .checkbox__text {
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }
 
@@ -42,7 +53,7 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .checkbox {
     margin: 20px 0 22px;
@@ -56,7 +67,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .checkbox {
     width: 260px;

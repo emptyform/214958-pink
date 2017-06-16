@@ -1,7 +1,6 @@
 .apps {
   padding: 28px @container-padding-mobile 30px;
   background-color: @grey;
-  width: 100%;
   margin: 0 @mobile-no-container;
 }
 
@@ -45,7 +44,7 @@
   line-height: 24px;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .apps {
     padding: 0 0 110px;
@@ -62,7 +61,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .apps {
     padding-bottom: 121px;

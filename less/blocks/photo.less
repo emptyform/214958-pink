@@ -86,10 +86,11 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .photo {
     width: calc(@column-width-tablet*2 + @container-padding-tablet);
+    margin-top: 18px;
 
     &.photo--day {
       width: 100%;
@@ -100,6 +101,10 @@
       flex-wrap: wrap;
       margin: 0 @container-padding-tablet;
       min-height: auto;
+    }
+
+    &.photo--day .photo__image {
+      min-width: 700px;
     }
 
     &.photo--day .photo__likes {
@@ -135,10 +140,11 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .photo {
     width: 300px;
+    margin-top: 50px;
 
     &.photo--day {
       max-width: 1200px;

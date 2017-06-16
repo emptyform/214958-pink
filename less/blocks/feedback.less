@@ -11,7 +11,7 @@
   padding: 13px 0 18px;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .feedback {
     padding-bottom: 21px;
@@ -22,19 +22,15 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .feedback {
     padding-top: 154px;
     padding-bottom: 30px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 30px;
-      width: 79px;
-      height: 63px;
-    }
+    background-image: url("../img/icon-quotes.svg");
+    background-size: 79px 63px;
+    background-position: center 73px;
+    background-repeat: no-repeat;
   }
 
   .feedback__list {

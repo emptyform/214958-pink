@@ -107,7 +107,7 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
 
   .prices {
     width: 100%;
@@ -167,7 +167,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
 
   .prices__header {
     padding: 18px;
@@ -175,6 +175,15 @@
 
   .prices__title {
     font-size: 18px;
+  }
+
+  .prices__flag {
+    background-size: 100%;
+
+    &::before {
+      top: 9px;
+      left: 9px;
+    }
   }
 
   .prices__text {
