@@ -2181,7 +2181,8 @@ template {
     padding-top: 0;
   }
   .photos__desc {
-    margin: 90px 120px 89px;
+    margin: 90px auto 89px;
+    padding: 0 130px;
   }
 }
 .photo {
