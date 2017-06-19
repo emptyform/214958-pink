@@ -28,6 +28,10 @@
   }
 }
 
+.apps__title {
+  display: none;
+}
+
 .apps__brands {
   display: flex;
   align-items: center;
@@ -47,13 +51,22 @@
 @media @tablet-width {
 
   .apps {
-    padding: 0 0 110px;
     background-color: transparent;
     margin: 0;
+    padding: 0;
   }
 
   .apps__brands {
     margin: 50px 30px 31px;
+  }
+
+  .apps__title {
+    .main-title(#ffffff);
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 35px;
   }
 
   .apps__desc {
@@ -70,6 +83,11 @@
 
   .apps__brands {
     margin: 70px 30px 51px;
+  }
+
+  .apps__title {
+    font-size: 50px;
+    margin-bottom: 57px;
   }
 
   .apps__link {

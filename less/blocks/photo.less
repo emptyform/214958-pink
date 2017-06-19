@@ -11,6 +11,7 @@
 
 .photo__link {
   font-size: 0;
+  flex-shrink: 0;
   display: block;
 }
 
@@ -110,6 +111,7 @@
     &.photo--day .photo__likes {
       order: -1;
       margin-top: 0;
+      padding-right: 35px;
       margin-left: auto;
     }
   }
@@ -153,12 +155,13 @@
     }
 
     &.photo--day .photo__desc {
-      margin: 0 @container-padding-desktop;
+      max-width: 940px;
+      align-self: center;
     }
   }
 
   .photo__flag {
     top: 54px;
-    right: @container-padding-desktop;
+    right: 130px;
   }
 }

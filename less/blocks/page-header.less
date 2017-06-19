@@ -1,43 +1,26 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
+  margin-bottom: -68px;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 10;
 
-  &.page-header--nojs {
+  &.page-header--nojs,
+  &.page-header--visible {
     position: static;
+    background-color: @dark-blue;
   }
 
-  &.page-header--nojs .page-header__list {
+  &.page-header--nojs .page-header__list,
+  &.page-header--visible .page-header__list {
     display: flex;
     visibility: visible;
-    position: static;
-    width: auto;
-  }
-
-  &.page-header--visible,
-  &.page-header--nojs {
-    background-color: @dark-blue;
-  }
-
-  &.page-header--visible .page-header__item,
-  &.page-header--nojs .page-header__item,
-  &.page-header--visible .page-header__menu {
-    background-color: @dark-blue;
-    border-top: 1px solid #485461;
-    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
   }
 
   &.page-header--nojs .page-header__button {
     display: none;
     visibility: hidden;
-  }
-
-  &.page-header--visible .page-header__list {
-    display: flex;
-    visibility: visible;
   }
 }
 
@@ -66,25 +49,28 @@
 }
 
 .page-header__list {
-  position: absolute;
   flex-direction: column;
-  margin: 0 -6.25%;
+  margin: 0 @mobile-no-container;
   padding: 0;
-  top: 100%;
-  width: 100%;
   list-style: none;
   display: none;
   visibility: hidden;
+  z-index: 10;
 }
 
 .page-header__item {
   margin: 0;
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
 
   &.page-header__item--logo {
     display: flex;
+    background: none;
     justify-content: space-between;
     align-items: center;
     min-height: 68px;
+    border: none;
   }
 }
 
@@ -113,8 +99,12 @@
 
 @media @tablet-width {
 
+  .page-header {
+    margin-bottom: -110px;
+  }
+
   .page-header__list {
-    margin: 0 -3.03%;
+    margin: 0 @tablet-no-container;
   }
 
   .page-header__item {
@@ -131,7 +121,7 @@
 
     &.page-header--nojs,
     &.page-header--visible {
-      position: absolute;
+      position: relative;
       background-color: rgba(0, 0, 0, 0.3);
     }
 
@@ -161,6 +151,8 @@
 
   .page-header__item {
     margin-left: 80px;
+    border: none;
+    background-color: transparent;
 
     &.page-header__item--logo {
       margin: 0;

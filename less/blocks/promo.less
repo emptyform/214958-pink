@@ -5,6 +5,8 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  padding: 100px 0 50px;
+  min-height: 239px;
 
   @media @retina {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -17,6 +19,7 @@
     background-size: 254px 288px, cover;
     background-position: left 176px, top;
     background-repeat: no-repeat;
+    padding: 462px 0 0;
 
     @media @retina {
       background-image:
@@ -26,20 +29,7 @@
   }
 }
 
-.promo__header {
-  min-height: 237px;
-  padding: 98px @container-padding-mobile 50px;
-  width: 100%;
-
-  &.promo__header--main {
-    min-height: 462px;
-  }
-
-  &.promo__header--main .promo__title {
-    display: none;
-  }
-}
-
+.promo__header,
 .promo__main-wrapper {
   width: 100%;
 }
@@ -58,6 +48,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 438px;
+    padding: 178px 0 80px;
 
     @media @retina {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -69,6 +61,7 @@
         url("../img/bg-back-tablet@1x.jpg");
       background-position: bottom right -22px, center;
       background-size: 700px 545px, cover;
+      padding: 205px 0 108px;
 
       @media @retina {
         background-image:
@@ -82,23 +75,6 @@
     padding-right: calc(@column-width-tablet*2 + @container-padding-tablet*2);
   }
 
-  .promo__header {
-    min-height: 440px;
-    padding-top: 183px;
-    padding-bottom: 70px;
-
-    &.promo__header--main {
-      min-height: 348px;
-      padding: 203px 0 30px;
-    }
-
-    &.promo__header--main .promo__title {
-      display: block;
-      font-size: 40px;
-      margin-bottom: 5px;
-    }
-  }
-
   .promo__title {
     font-size: 50px;
   }
@@ -108,6 +84,8 @@
 
   .promo {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    min-height: 395px;
+    padding: 172px 0 102px;
 
     @media @retina {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -119,6 +97,7 @@
         url("../img/bg-back-desktop@1x.jpg");
       background-size: 1050px 645px, cover;
       background-position-x: ~"calc(50% + 71px)", center;
+      padding: 222px 0 0;
 
       @media @retina {
         background-image:
@@ -129,23 +108,7 @@
   }
 
   .promo__main-wrapper {
-    padding-right: 647px;
-  }
-
-  .promo__header {
-    padding-top: 178px;
-    min-height: 395px;
-    max-width: 1200px;
-
-    &.promo__header--main {
-      min-height: 400px;
-      max-width: 300px;
-      padding: 222px 0 53px;
-    }
-
-    &.promo__header--main .promo__title {
-      font-size: 50px;
-    }
+    padding-right: 650px;
   }
 
   .promo__title {
